@@ -1,2 +1,9 @@
 /*import all bootstrap scss */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+ 
+.content[contenteditable="true"]:empty:before { // displays the placeholder for all elements of .content
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block;
+}
