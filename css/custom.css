@@ -7820,9 +7820,19 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus {
+  border: solid black;
+  border-width: thin;
+  outline: none; }
+
 .content[contenteditable="true"]:empty:before {
   content: attr(placeholder);
   pointer-events: none;
+  display: block; }
+
+style {
+  white-space: pre-wrap;
   display: block; }
 
 /*# sourceMappingURL=custom.css.map */

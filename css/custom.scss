@@ -1,9 +1,18 @@
 /*import all bootstrap scss */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
- 
+[contenteditable="true"]:active, //removes borders on all contenteditable elements
+[contenteditable="true"]:focus {
+    border: solid black;
+    border-width: thin;
+    outline: none;
+}
 .content[contenteditable="true"]:empty:before { // displays the placeholder for all elements of .content
     content: attr(placeholder);
     pointer-events: none;
+    display: block;
+}
+style {
+    white-space: pre-wrap;
     display: block;
 }
