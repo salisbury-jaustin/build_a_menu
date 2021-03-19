@@ -12,25 +12,25 @@ var Toolbar = {
         if ($(`#${buttonId}`).hasClass('heading')) { // if the the headings button was clicked 
             switch (buttonId) { // determines which heading element to append to the row 
                 case "headXL":
-                    $(`#row${counter}`).append('<h1 class="content headings" contenteditable="true" placeholder="Menu Category..."></h1>');
+                    $(`#row${counter}`).append('<h1 class="content headings editable" contenteditable="true" placeholder="Menu Category..."></h1>');
                     break;
                 case 'headL':
-                    $(`#row${counter}`).append('<h2 class="content headings" contenteditable="true" placeholder="Menu Category..."></h2>');
+                    $(`#row${counter}`).append('<h2 class="content headings editable" contenteditable="true" placeholder="Menu Category..."></h2>');
                     break;
                 case 'headM':
-                    $(`#row${counter}`).append('<h3 class="content headings" contenteditable="true" placeholder="Menu Category..."></h3>');
+                    $(`#row${counter}`).append('<h3 class="content headings editable" contenteditable="true" placeholder="Menu Category..."></h3>');
                     break;
                 case 'headS':
-                    $(`#row${counter}`).append('<h4 class="content headings" contenteditable="true" placeholder="Menu Category..."></h4>');
+                    $(`#row${counter}`).append('<h4 class="content headings editable" contenteditable="true" placeholder="Menu Category..."></h4>');
                     break;
             }
         } else  { // if items or description button was clicked
             switch (buttonId) {
                 case 'items':
-                    $(`#row${counter}`).append('<p class="content menuItems" contenteditable="true" placeholder="Menu item && Price..."></p>');
+                    $(`#row${counter}`).append('<p class="content menuItems editable" contenteditable="true" placeholder="Menu item && Price..."></p>');
                     break;
                 case 'desc':
-                    $(`#row${counter}`).append('<p class="content descriptions" contenteditable="true" placeholder="Item description..."></p>');
+                    $(`#row${counter}`).append('<p class="content descriptions editable" contenteditable="true" placeholder="Item description..."></p>');
                     break;
             }   
         }
